@@ -4,7 +4,8 @@ Sistema de censo para familias que adquirireron generadors
 
 Capturas del sistema
 
-![image](https://github.com/user-attachments/assets/d4784d9c-17a3-4ed9-b274-32329b2e163d)
+![image](https://github.com/user-attachments/assets/fddaa424-0824-4325-87e4-fdaee85f2435)
+
 
 ![image](https://github.com/user-attachments/assets/8051d904-7321-4517-96ba-7276193131e1)
 

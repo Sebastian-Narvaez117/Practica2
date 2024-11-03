@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{%block content %}
+
+
+<section id="listaa" class="contact section">
+
+    <!-- Section Title -->
+    <div class="container section-title" >
+        <h2>Lista</h2>
+        <p>Familias</p>
+    </div>
+
+    <div class="container">
+        <div class="col-md-15">
+            <div class="card">
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nro</th>
+                                <th>Familia</th>
+                                <th>Direccion</th>
+                                <th>Telefono</th>
+                                <th>Consumo(KW)</th>
+                                <th>Costo($)</th>
+                                <th>Energia(KW)</th>
+                                <th>Combustible</th>
+                                <th>Uso</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in lista %}
+                            <tr>
+                                <td>{{ item.id }}</td>
+                                <td>{{ item.apellido }}</td>
+                                <td>{{ item.direccion }}</td>   
+                                <td>{{ item.telefono }}</td>
+                                <td>{{ item.consumo }}</td>
+                                <td>{{ item.costo }}</td>
+                                <td>{{ item.energiagenerada_KW}}</td>
+                                <td>{{ item.combustible }}</td>
+                                <td>{{ item.uso }}</td>
+                                <td><a href="/admin/family/edit/{{ item.id }}" class="btn btn-dark">Editar</a> <a href="/admin/family/edit/{{ item.id }}" class="btn btn-dark">Eliminar</a></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
